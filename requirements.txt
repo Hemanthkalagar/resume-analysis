@@ -1,1 +1,7 @@
+flash
+pillow
+google-generativeai
+google-genai
+python-dotenv
+gunicorn
 
