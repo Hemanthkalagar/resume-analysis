@@ -15,7 +15,7 @@ os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
 # Gemini AI setup
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("models/gemini-2.0-flash")
+model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # Function to extract text from PDF
 def extract_text_from_pdf(pdf_path):
@@ -73,7 +73,7 @@ Resume Text:
                     "suggestions": ["Unable to analyze resume properly"]
                 }
 
-    return render_template("image.html", result=result)
+    return render_template("index.html", result=result)
 
 if __name__ == "__main__":
     app.run(debug=True)
