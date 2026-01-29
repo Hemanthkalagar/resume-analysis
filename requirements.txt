@@ -3,6 +3,8 @@ pillow
 google-generativeai
 google-genai
 python-dotenv
+pyPDF2
 gunicorn
+
 
 
