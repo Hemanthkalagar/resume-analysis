@@ -14,7 +14,7 @@ app.config["UPLOAD_FOLDER"] = "uploads"
 os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
 # Gemini AI setup
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("api"))
 model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # Function to extract text from PDF
