@@ -1,7 +1,8 @@
-flash
+flask
 pillow
 google-generativeai
 google-genai
 python-dotenv
 gunicorn
+
 
